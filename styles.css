@@ -1,0 +1,72 @@
+ body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #222;
+      color: #fff;
+      height: 200vh;
+    }
+
+    .summary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #gamify-panel {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 250px;
+      background: #2c2c2c;
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.125);
+      z-index: 999;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .quest {
+      font-size: 0.9rem;
+    }
+
+    .fade-quest {
+      animation: fadeInOut 1.2s forwards;
+    }
+
+    @keyframes fadeInOut {
+      0% { opacity: 1; }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    button {
+      position:fixed; 
+      top:20px; 
+      right:20px; 
+      padding:10px; 
+      width:100px;
+      cursor: pointer;
+    }
+
+    button.below {
+      top:80px;
+    }
+
+    .badge {
+      background: #4caf50;
+      padding: 6px 10px;
+      border-radius: 8px;
+      display: inline-block;
+      font-size: 0.85rem;
+    }
+
+    .badge-blue {
+      background: #514d91;
+    }
+    .badge-green {
+      background: #4caf50;
+    }
+    .badge-red {
+      background: #ac2924;
+    }
